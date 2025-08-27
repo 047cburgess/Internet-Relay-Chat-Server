@@ -187,7 +187,7 @@ void Server::receiveNewData(int fd)
 		if (!client)
 			return ;
 
-		// Now extract and process complete lines
+		// Extract and process complete lines
 		std::string &buffer = client->getMessageBuffer();
 		buffer += buff;
 		size_t pos;
@@ -321,9 +321,9 @@ void Server::disconnectClient(int fd)
 	for (size_t i = 0; i < chanCopy.size(); ++i)
 	{
 		Channel* current = chanCopy[i];
-		// removes the client from its channel
+		// remove the client from its channel
 		current->removeClient(client);
-		// removes the channel from the client list
+		// remove the channel from the client list
 		client->leaveChannel(current);
 
 		// if is empty delete it from server
@@ -348,7 +348,7 @@ Client *Server::getClient(int fd)
 			return _clients[i];
 		}
 	}
-	return NULL;
+	return (NULL);
 }
 
 
