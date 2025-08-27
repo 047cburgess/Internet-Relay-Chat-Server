@@ -1,0 +1,26 @@
+Connect to irssi:
+	irssi -c localhost -w <password> -n <nickname> -p <portnum>
+	OR:
+	irssi
+	/connect localhost <port> <password> <nickname>
+
+Connect to nc:
+	nc localhost 6667
+	PASS password
+	NICK nickname
+	USER caburges localhost localhost :Casey Burgess
+	//USER username hostname servername :real name
+
+File transfer in irssi:
+	/set dcc_download_path ~/Downloads
+	/dcc send <nickname> <filepath>
+	/dcc get <receiver nickname> <filepath>
+
+Pause the program
+	Ctrl+z
+Resume the program
+	fg
+
+Kill Process
+	ps aux
+	kill <PID>
