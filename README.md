@@ -137,32 +137,6 @@ QUIT :Goodbye!              # Disconnect with message
 /dcc get <sender_nickname> <filepath>
 ```
 
-## Project Structure
-
-```
-ft_irc/
-├── Makefile              # Build configuration
-├── README.md             # This file
-├── setup.txt             # Connection examples and debugging notes
-├── include/              # Header files
-│   ├── Server.class.hpp
-│   ├── Client.class.hpp
-│   ├── Channel.class.hpp
-│   ├── IrcFormatter.class.hpp
-│   ├── IrcCodes.hpp
-│   ├── parse.hpp
-│   └── ft_irc.hpp
-└── src/                  # Source files
-    ├── main.cpp
-    ├── Server.class.cpp
-    ├── Server.class.commands.cpp
-    ├── Client.class.cpp
-    ├── Channel.class.cpp
-    ├── IrcFormatter.class.cpp
-    ├── Bot.class.cpp
-    └── parse.cpp
-```
-
 ## Troubleshooting
 
 - **Port Already in Use**: If the port is already bound, try a different port or wait a moment before restarting
